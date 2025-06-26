@@ -27,7 +27,7 @@ plt.show()
 sns.countplot(x='sex', data=df, palette="mako_r")
 plt.xlabel("Sex (0 = female, 1= male)")
 plt.show()
-# the following lines of code will analyze gender Vs Target (You can add more analyses from your side inspired by this analysis)
+# the following lines of code will analyze gender Vs Target 
 pd.crosstab(df.sex,df.target).plot(kind="bar",figsize=(15,6),color=['#1CA53B','#AA1111' ])
 plt.title('Heart Disease Frequency for Sex')
 plt.xlabel('Sex (0 = Female, 1 = Male)')
